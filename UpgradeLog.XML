@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FunctMetaL">
+</Property><Property Name="Solution File" Value="C:\Projects\Projects\FunctMetaL\FunctMetaL.sln">
+</Property><Property Name="Date" Value="Saturday, December 05, 2009">
+</Property><Property Name="Time" Value="22:10 PM">
+</Property></Properties><Event ErrorLevel="0" Project="FunctMetaL" Source="FunctMetaL.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FunctMetaL" Source="FunctMetaL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestFunctMetaL" Source="..\TestFunctMetaL\TestFunctMetaL.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestFunctMetaL" Source="..\TestFunctMetaL\TestFunctMetaL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FunctMetaLRunner" Source="..\FunctMetaLRunner\FunctMetaLRunner.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FunctMetaLRunner" Source="..\FunctMetaLRunner\FunctMetaLRunner.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CalcLib" Source="..\CalcLib\CalcLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CalcLib" Source="..\CalcLib\CalcLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestWatiN" Source="..\TestWatiN\TestWatiN.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestWatiN" Source="..\TestWatiN\TestWatiN.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FunctMetaL.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FunctMetaL.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FunctMetaL" Source="FunctMetaL.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="" Source="FunctMetaL.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FunctMetaL.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="3" Project="" Source="LocalTestRun.testrunconfig" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LocalTestRun.testrunconfig" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="0" Project="TestFunctMetaL" Source="..\TestFunctMetaL\TestFunctMetaL.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FunctMetaLRunner" Source="..\FunctMetaLRunner\FunctMetaLRunner.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CalcLib" Source="..\CalcLib\CalcLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TestWatiN" Source="..\TestWatiN\TestWatiN.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

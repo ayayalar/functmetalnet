@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D27F6CF-B146-402E-96AA-415C3105CE9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FunctMetaL</RootNamespace>
+    <AssemblyName>FunctMetaL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDD\Action.cs" />
+    <Compile Include="BDD\Given.cs" />
+    <Compile Include="BDD\Scenario.cs" />
+    <Compile Include="BDD\Story.cs" />
+    <Compile Include="BDD\Then.cs" />
+    <Compile Include="BDD\When.cs" />
+    <Compile Include="Core\Array.cs" />
+    <Compile Include="Core\Assert.cs" />
+    <Compile Include="Core\Break.cs" />
+    <Compile Include="Core\Case.cs" />
+    <Compile Include="Core\DoWhile.cs" />
+    <Compile Include="Core\Else.cs" />
+    <Compile Include="Core\Error.cs" />
+    <Compile Include="Core\Eval.cs" />
+    <Compile Include="Core\For.cs" />
+    <Compile Include="Core\ForEach.cs" />
+    <Compile Include="Core\ICore.cs" />
+    <Compile Include="Core\If.cs" />
+    <Compile Include="Core\Main.cs" />
+    <Compile Include="Core\Message.cs" />
+    <Compile Include="Core\XmlComment.cs" />
+    <Compile Include="Interpreter\XmlToObject.cs" />
+    <Compile Include="Util\ConvertType.cs" />
+    <Compile Include="Util\Debug.cs" />
+    <Compile Include="Util\ExtractVariableOrArray.cs" />
+    <Compile Include="Util\GetNode.cs" />
+    <Compile Include="Util\Import.cs" />
+    <Compile Include="Util\Logger.cs" />
+    <Compile Include="Util\Plugin.cs" />
+    <Compile Include="Util\Process.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Sql.cs" />
+    <Compile Include="Core\Switch.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="TestSuite.cs" />
+    <Compile Include="Core\Variable.cs" />
+    <Compile Include="Core\While.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\libs\CalcLib.dll" />
+    <Content Include="libs\libs\Interop.SHDocVw.dll" />
+    <Content Include="libs\libs\TestWatiN.dll" />
+    <Content Include="libs\libs\TestWatiN.pdb" />
+    <Content Include="libs\libs\WatiN.Core.dll" />
+    <Content Include="libs\libs\WatiN.Core.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

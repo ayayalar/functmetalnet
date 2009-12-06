@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C63B0082-704D-4BD1-B219-B66E22D2F190}"
+	ProjectSection(SolutionItems) = preProject
+		FunctMetaL.vsmdi = FunctMetaL.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctMetaL", "FunctMetaL.csproj", "{4D27F6CF-B146-402E-96AA-415C3105CE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctMetaL", "..\TestFunctMetaL\TestFunctMetaL.csproj", "{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctMetaLRunner", "..\FunctMetaLRunner\FunctMetaLRunner.csproj", "{1B9C4560-3A2D-47B0-9096-155E268823A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcLib", "..\CalcLib\CalcLib.csproj", "{4E327304-6774-421C-B2F5-6CB32C9D488C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWatiN", "..\TestWatiN\TestWatiN.csproj", "{3998961C-3753-46A5-9932-F5956184ACD2}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = FunctMetaL.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D27F6CF-B146-402E-96AA-415C3105CE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D27F6CF-B146-402E-96AA-415C3105CE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D27F6CF-B146-402E-96AA-415C3105CE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D27F6CF-B146-402E-96AA-415C3105CE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E327304-6774-421C-B2F5-6CB32C9D488C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E327304-6774-421C-B2F5-6CB32C9D488C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E327304-6774-421C-B2F5-6CB32C9D488C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E327304-6774-421C-B2F5-6CB32C9D488C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3998961C-3753-46A5-9932-F5956184ACD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3998961C-3753-46A5-9932-F5956184ACD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3998961C-3753-46A5-9932-F5956184ACD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3998961C-3753-46A5-9932-F5956184ACD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
