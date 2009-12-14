@@ -29,6 +29,9 @@ namespace FunctMetaL.Interpreter
                     case "Debug":
                         Util.Debug.Parse(node);
                         break;
+                    case "Function":
+                        Core.Function.Parse(node);
+                        break;
                     case "DoWhile":
                         Core.DoWhile.Parse(node);
                         break;

@@ -8,7 +8,8 @@ namespace FunctMetaL.Core
     {
         public static void Parse(XmlNode node)
         {
-        	string text = Util.ExtractVariableOrArray.ExtractValue(GetNode.Value(node, "text"));
+        	//string text = Util.ExtractVariableOrArray.ExtractValue(GetNode.Value(node, "text"));
+            string text = Util.ExtractVariableOrArray.Extract(GetNode.Value(node, "text"));
             if (Main.Log)
             {
                 Util.Logger.Write(text);

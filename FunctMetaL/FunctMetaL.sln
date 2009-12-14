@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctMetaL", "FunctMetaL.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctMetaLRunner", "..\FunctMetaLRunner\FunctMetaLRunner.csproj", "{1B9C4560-3A2D-47B0-9096-155E268823A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctMetaLTest", "..\FunctMetaLTest\FunctMetaLTest.csproj", "{8E60D187-CD4D-45D7-A7DA-D88BBC9401E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctMetaL", "..\TestFunctMetaL\TestFunctMetaL.csproj", "{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -30,10 +30,10 @@ Global
 		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B9C4560-3A2D-47B0-9096-155E268823A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E60D187-CD4D-45D7-A7DA-D88BBC9401E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E60D187-CD4D-45D7-A7DA-D88BBC9401E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E60D187-CD4D-45D7-A7DA-D88BBC9401E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E60D187-CD4D-45D7-A7DA-D88BBC9401E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D71155-33D6-4A5D-920B-BFB2CDDE74C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

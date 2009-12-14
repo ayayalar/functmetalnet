@@ -7,6 +7,75 @@ namespace FunctMetaL.Util
 	/// </summary>
 	public class ExtractVariableOrArray
 	{
+        public static string Extract(string text)
+        {
+            do
+            {
+                if (text.IndexOf("@(") != -1)
+                {
+                    ExtractArrayItem(ref text);
+                }
+                else if (text.IndexOf("$(") != -1)
+                {
+                    ExtractVariable(ref text);
+                }
+                else
+                    break;
+            }
+            while (true);
+
+            string textResult = text;
+
+            return textResult;
+        }
+        static void ExtractVariable(ref string text)
+        {
+            int startIndex = text.IndexOf("$(");
+            int endIndex = text.IndexOf(')') - (startIndex - 1);
+            string value = string.Empty;
+            string rawVariable = text.Substring(startIndex, endIndex);
+            string cleanVariable = rawVariable.Remove(0, 2);
+
+            cleanVariable = cleanVariable.Remove((cleanVariable.Length - 1), 1);
+
+            if (Core.Variable.Variables.ContainsKey(cleanVariable))
+            {
+                value = Core.Variable.Variables[cleanVariable];
+                text = text.Replace(rawVariable, value);
+            }
+        }
+
+        static void ExtractArrayItem(ref string text)
+        {
+            int startIndex = text.IndexOf("@(");
+            int endIndex = text.IndexOf(')') - (startIndex - 1);
+            string value = string.Empty;
+            string rawArrayItem = text.Substring(startIndex, endIndex);
+            string cleanArrayItem = rawArrayItem.Remove(0, 2);
+            cleanArrayItem = cleanArrayItem.Remove((cleanArrayItem.Length - 1), 1);
+            string arrName = cleanArrayItem.Substring(0, cleanArrayItem.IndexOf('['));
+            string arrIndex = cleanArrayItem.Substring((cleanArrayItem.IndexOf('[') + 1),
+                ((cleanArrayItem.IndexOf(']') - cleanArrayItem.IndexOf('[') - 1)));
+
+            int index;
+
+            if (!int.TryParse(arrIndex, out index))
+            {
+                ExtractVariable(ref arrIndex);
+                index = int.Parse(arrIndex);
+            }
+
+            if (Core.Array.Arrays.ContainsKey(arrName))
+            {
+                value = Core.Array.Arrays[arrName][index];
+                text = text.Replace(rawArrayItem, value);
+            }
+        }
+
+        string ExtractFunction(string text)
+        {
+            return text;
+        }
 		public static string ExtractValue(string text)
 		{
 			Dictionary<string, string> replacement = 
@@ -27,9 +96,11 @@ namespace FunctMetaL.Util
 			{
 				while(startIndex != -1)
 				{
+                    //if reached to the end break out
 					if (endIndex >= (text.Length - 1))
 						break;
 
+                    //this is an array
                     if ((text.IndexOf("@(", endIndex)) != -1)
                     {
                         string tmp = string.Empty;

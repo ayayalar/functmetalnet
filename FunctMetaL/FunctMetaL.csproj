@@ -65,6 +65,7 @@
     <Compile Include="Core\Eval.cs" />
     <Compile Include="Core\For.cs" />
     <Compile Include="Core\ForEach.cs" />
+    <Compile Include="Core\Function.cs" />
     <Compile Include="Core\ICore.cs" />
     <Compile Include="Core\If.cs" />
     <Compile Include="Core\Main.cs" />
