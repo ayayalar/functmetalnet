@@ -11,11 +11,11 @@ namespace FunctMetaL.Util
         {
             do
             {
-                if (text.IndexOf("@(") != -1)
+                if (text.IndexOf(Core.Constants.ARRAY) != -1)
                 {
                     ExtractArrayItem(ref text);
                 }
-                else if (text.IndexOf("$(") != -1)
+                else if (text.IndexOf(Core.Constants.VARIABLE) != -1)
                 {
                     ExtractVariable(ref text);
                 }
@@ -30,7 +30,7 @@ namespace FunctMetaL.Util
         }
         static void ExtractVariable(ref string text)
         {
-            int startIndex = text.IndexOf("$(");
+            int startIndex = text.IndexOf(Core.Constants.VARIABLE);
             int endIndex = text.IndexOf(')') - (startIndex - 1);
             string value = string.Empty;
             string rawVariable = text.Substring(startIndex, endIndex);
@@ -47,7 +47,7 @@ namespace FunctMetaL.Util
 
         static void ExtractArrayItem(ref string text)
         {
-            int startIndex = text.IndexOf("@(");
+            int startIndex = text.IndexOf(Core.Constants.ARRAY);
             int endIndex = text.IndexOf(')') - (startIndex - 1);
             string value = string.Empty;
             string rawArrayItem = text.Substring(startIndex, endIndex);
@@ -101,12 +101,12 @@ namespace FunctMetaL.Util
 						break;
 
                     //this is an array
-                    if ((text.IndexOf("@(", endIndex)) != -1)
+                    if ((text.IndexOf(Core.Constants.ARRAY, endIndex)) != -1)
                     {
                         string tmp = string.Empty;
                         string sub_text = string.Empty;
                         string stringToReplace = string.Empty;
-                        startIndex = text.IndexOf("@(", endIndex);                       
+                        startIndex = text.IndexOf(Core.Constants.ARRAY, endIndex);                       
 
                         sub_text = text.Substring(endIndex);
                         stringToReplace = sub_text.Substring((sub_text.IndexOf('[') + 1),
@@ -118,9 +118,9 @@ namespace FunctMetaL.Util
 
                         variable = false;
                     }
-                    else if ((text.IndexOf("$(", endIndex)) != -1)
+                    else if ((text.IndexOf(Core.Constants.VARIABLE, endIndex)) != -1)
                     {
-                        startIndex = text.IndexOf("$(", endIndex);
+                        startIndex = text.IndexOf(Core.Constants.VARIABLE, endIndex);
                         variable = true;
                     }
                     

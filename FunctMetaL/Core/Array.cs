@@ -5,7 +5,7 @@ using FunctMetaL.Util;
 
 namespace FunctMetaL.Core
 {
-    internal class Array
+    internal class Array : Base
     {
     	static Dictionary<string, List<string>> arraylist =
             new Dictionary<string, List<string>>();

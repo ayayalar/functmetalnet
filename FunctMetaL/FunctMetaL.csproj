@@ -57,8 +57,10 @@
     <Compile Include="BDD\When.cs" />
     <Compile Include="Core\Array.cs" />
     <Compile Include="Core\Assert.cs" />
+    <Compile Include="Core\Base.cs" />
     <Compile Include="Core\Break.cs" />
     <Compile Include="Core\Case.cs" />
+    <Compile Include="Core\Constants.cs" />
     <Compile Include="Core\DoWhile.cs" />
     <Compile Include="Core\Else.cs" />
     <Compile Include="Core\Error.cs" />

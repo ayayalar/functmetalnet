@@ -38,7 +38,6 @@
             this.txtResult = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsButExecute = new System.Windows.Forms.ToolStripButton();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tsBundles = new System.Windows.Forms.ToolStripDropDownButton();
             this.coreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.variableToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,8 +53,9 @@
             this.commentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.utilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pluginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabSuite.SuspendLayout();
             this.tabResult.SuspendLayout();
@@ -138,12 +138,6 @@
             this.tsButExecute.Text = "Start";
             this.tsButExecute.Click += new System.EventHandler(this.tsButExecute_Click);
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "play.ico");
-            // 
             // tsBundles
             // 
             this.tsBundles.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -177,77 +171,77 @@
             // variableToolStripMenuItem1
             // 
             this.variableToolStripMenuItem1.Name = "variableToolStripMenuItem1";
-            this.variableToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.variableToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.variableToolStripMenuItem1.Text = "Variable";
             this.variableToolStripMenuItem1.Click += new System.EventHandler(this.variableToolStripMenuItem1_Click);
             // 
             // arrayToolStripMenuItem1
             // 
             this.arrayToolStripMenuItem1.Name = "arrayToolStripMenuItem1";
-            this.arrayToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.arrayToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.arrayToolStripMenuItem1.Text = "Array";
             this.arrayToolStripMenuItem1.Click += new System.EventHandler(this.arrayToolStripMenuItem1_Click);
             // 
             // forLoopToolStripMenuItem1
             // 
             this.forLoopToolStripMenuItem1.Name = "forLoopToolStripMenuItem1";
-            this.forLoopToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.forLoopToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.forLoopToolStripMenuItem1.Text = "For Loop";
             this.forLoopToolStripMenuItem1.Click += new System.EventHandler(this.forLoopToolStripMenuItem1_Click);
             // 
             // whileLoopToolStripMenuItem1
             // 
             this.whileLoopToolStripMenuItem1.Name = "whileLoopToolStripMenuItem1";
-            this.whileLoopToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.whileLoopToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.whileLoopToolStripMenuItem1.Text = "While Loop";
             this.whileLoopToolStripMenuItem1.Click += new System.EventHandler(this.whileLoopToolStripMenuItem1_Click);
             // 
             // doWhileLoopToolStripMenuItem1
             // 
             this.doWhileLoopToolStripMenuItem1.Name = "doWhileLoopToolStripMenuItem1";
-            this.doWhileLoopToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.doWhileLoopToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.doWhileLoopToolStripMenuItem1.Text = "Do While Loop";
             this.doWhileLoopToolStripMenuItem1.Click += new System.EventHandler(this.doWhileLoopToolStripMenuItem1_Click);
             // 
             // messageToolStripMenuItem1
             // 
             this.messageToolStripMenuItem1.Name = "messageToolStripMenuItem1";
-            this.messageToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.messageToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.messageToolStripMenuItem1.Text = "Message";
             this.messageToolStripMenuItem1.Click += new System.EventHandler(this.messageToolStripMenuItem1_Click);
             // 
             // switchToolStripMenuItem1
             // 
             this.switchToolStripMenuItem1.Name = "switchToolStripMenuItem1";
-            this.switchToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.switchToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.switchToolStripMenuItem1.Text = "Switch";
             this.switchToolStripMenuItem1.Click += new System.EventHandler(this.switchToolStripMenuItem1_Click);
             // 
             // ifElseToolStripMenuItem1
             // 
             this.ifElseToolStripMenuItem1.Name = "ifElseToolStripMenuItem1";
-            this.ifElseToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.ifElseToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.ifElseToolStripMenuItem1.Text = "If/Else";
             this.ifElseToolStripMenuItem1.Click += new System.EventHandler(this.ifElseToolStripMenuItem1_Click);
             // 
             // breakToolStripMenuItem1
             // 
             this.breakToolStripMenuItem1.Name = "breakToolStripMenuItem1";
-            this.breakToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.breakToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.breakToolStripMenuItem1.Text = "Break";
             this.breakToolStripMenuItem1.Click += new System.EventHandler(this.breakToolStripMenuItem1_Click);
             // 
             // evalToolStripMenuItem1
             // 
             this.evalToolStripMenuItem1.Name = "evalToolStripMenuItem1";
-            this.evalToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.evalToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.evalToolStripMenuItem1.Text = "Eval";
             this.evalToolStripMenuItem1.Click += new System.EventHandler(this.evalToolStripMenuItem1_Click);
             // 
             // commentToolStripMenuItem1
             // 
             this.commentToolStripMenuItem1.Name = "commentToolStripMenuItem1";
-            this.commentToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.commentToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.commentToolStripMenuItem1.Text = "Comment";
             this.commentToolStripMenuItem1.Click += new System.EventHandler(this.commentToolStripMenuItem1_Click);
             // 
@@ -264,23 +258,29 @@
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.importToolStripMenuItem.Text = "Import";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
-            // 
-            // processToolStripMenuItem
-            // 
-            this.processToolStripMenuItem.Name = "processToolStripMenuItem";
-            this.processToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.processToolStripMenuItem.Text = "Process";
-            this.processToolStripMenuItem.Click += new System.EventHandler(this.processToolStripMenuItem_Click);
             // 
             // pluginToolStripMenuItem
             // 
             this.pluginToolStripMenuItem.Name = "pluginToolStripMenuItem";
-            this.pluginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pluginToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.pluginToolStripMenuItem.Text = "Plugin";
             this.pluginToolStripMenuItem.Click += new System.EventHandler(this.pluginToolStripMenuItem_Click);
+            // 
+            // processToolStripMenuItem
+            // 
+            this.processToolStripMenuItem.Name = "processToolStripMenuItem";
+            this.processToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.processToolStripMenuItem.Text = "Process";
+            this.processToolStripMenuItem.Click += new System.EventHandler(this.processToolStripMenuItem_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "play.ico");
             // 
             // FunctMetaLRunner
             // 
